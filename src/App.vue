@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <header>
+    <div class="navbar-brand">
+      <img src="@/assets/logo.svg" alt="Taniti Island logo">
+    </div>
+    <router-view name="navigation"></router-view>
+  </header>
+  <main>
+    <router-view></router-view>
+  </main>
+  <footer>
+    <p>&copy; Ashley Fallon, images provided by <a href="https://unsplash.com">unsplash</a>.</p>
+    <ul>
+      <li>
+        <img src="@/assets/svg/facebook.svg" alt="Facebook">
+      </li>
+      <li>
+        <img src="@/assets/svg/instagram.svg" alt="Instagram">
+      </li>
+      <li>
+        <img src="@/assets/svg/twitter.svg" alt="Twitter">
+      </li>
+      <li>
+        <img src="@/assets/svg/googleplus.svg" alt="Google Plus">
+      </li>
+    </ul>
+  </footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
